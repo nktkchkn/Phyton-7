@@ -13,26 +13,26 @@
 #     **Вывод:** Парам пам-пам  
 
 
-def rhythm(str):
-    str = str.split()
-    list_1 = []
-    for word in str:
-        sum_w = 0
-        for _ in word:
-            if _ in "а, е, ё, и, о, у, ы, э, ю, я":
-                sum_w += 1
-        list_1.append(sum_w)
-    return len(list_1) == list_1.count(list_1[0])
+# def rhythm(str):
+#     str = str.split()
+#     list_1 = []
+#     for word in str:
+#         sum_w = 0
+#         for _ in word:
+#             if _ in "а, е, ё, и, о, у, ы, э, ю, я":
+#                 sum_w += 1
+#         list_1.append(sum_w)
+#     return len(list_1) == list_1.count(list_1[0])
 
-str_1 = ("пара-ра-рам рам-пам-папам па-ра-па-да")
-if rhythm(str_1):
-    print("Парам пам-пам")
-else:
-    print("Пам парам")
+# str_1 = ("пара-ра-рам рам-пам-папам па-ра-па-да")
+# if rhythm(str_1):
+#     print("Парам пам-пам")
+# else:
+#     print("Пам парам")
 
 
 # def rifma(chant):
-# st = chant.lower().split()
+# st = c.lower().split()
 # f = lambda x: sum(1 for i in x if i in 'аеёиоуыэюя')
 # tmp = f(st[0])
 # if all([f(i) == tmp for i in st]):
@@ -47,3 +47,20 @@ else:
  
 # print(rifma("А-ведь-он-худеть-не-станет,\
 #  Если-конечно...-Вовремя-подкрепиться..."))
+
+
+# def rhythm(str):
+# str = str.split()
+# list_1 = []
+# for word in str:
+# sum_w = 0
+# for i in word:
+# if i in "а, е, ё, и, о, у, ы, э, ю, я":
+# sum_w += 1
+# list_1.append(sum_w)
+# return len(list_1) == list_1.count(list_1[0])
+# str_1 = "пара-ра-рам рам-пам-папам па-ра-па-дам"
+# if rhythm(str_1):
+# print("Парам пам-пам")
+# else:
+# print("Пам парам")
